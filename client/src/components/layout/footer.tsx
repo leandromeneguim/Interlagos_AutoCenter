@@ -67,7 +67,7 @@ export default function Footer() {
               className="text-gray-400 hover:text-white transition-colors"
             >
               <img 
-                src="/images/avatar-de-homem-careca-oculos-escuros-e-bigode.png" 
+                src="/images/avatar-de-homem-careca-oculos-escuros-e-bigode-branco.png" 
                 alt="Desenvolvedor" 
                 className="w-8 h-8 rounded-full"
               />
