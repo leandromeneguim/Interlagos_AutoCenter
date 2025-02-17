@@ -21,10 +21,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/">
-            <a className="flex items-center">
-              <img src="/logo1.jpg" alt="Interlagos Auto Center" className="h-12" />
-            </a>
+          <Link href="/" className="flex items-center">
+            <img src="/logo1.jpg" alt="Interlagos Auto Center" className="h-12" />
           </Link>
 
           {/* Desktop Menu */}
@@ -32,13 +30,15 @@ export default function Navbar() {
             {/* Navigation Items */}
             <div className="flex space-x-8">
               {NAV_ITEMS.map((item) => (
-                <Link key={item.href} href={item.href}>
-                  <a className={cn(
+                <Link 
+                  key={item.href} 
+                  href={item.href}
+                  className={cn(
                     "text-sm font-medium transition-colors hover:text-primary",
                     location === item.href ? "text-primary" : "text-white"
-                  )}>
-                    {item.label}
-                  </a>
+                  )}
+                >
+                  {item.label}
                 </Link>
               ))}
             </div>
@@ -76,18 +76,18 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden py-4 space-y-4">
             {NAV_ITEMS.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <a
-                  className={cn(
-                    "block px-4 py-2 text-sm font-medium rounded-md transition-colors",
-                    location === item.href
-                      ? "bg-primary/10 text-primary"
-                      : "text-white hover:bg-gray-800"
-                  )}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </a>
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "block px-4 py-2 text-sm font-medium rounded-md transition-colors",
+                  location === item.href
+                    ? "bg-primary/10 text-primary"
+                    : "text-white hover:bg-gray-800"
+                )}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
               </Link>
             ))}
             <div className="px-4 py-2">
