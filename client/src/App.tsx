@@ -4,7 +4,7 @@ import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
-import WhatsAppButton from "@/components/whatsapp-button";
+import SocialButtons from "@/components/social-buttons";
 import Home from "@/pages/home";
 import Services from "@/pages/services";
 import Gallery from "@/pages/gallery";
@@ -24,7 +24,7 @@ function Router() {
           <Route component={NotFound} />
         </Switch>
       </main>
-      <WhatsAppButton />
+      <SocialButtons />
       <Footer />
     </div>
   );

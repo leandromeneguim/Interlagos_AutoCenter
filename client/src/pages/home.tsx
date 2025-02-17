@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSlider from "@/components/hero-slider";
+import Promotions from "@/components/promotions";
 import ServiceCard from "@/components/service-card";
 import { 
   Settings, 
@@ -49,7 +50,8 @@ export default function Home() {
   return (
     <div>
       <HeroSlider />
-      
+      <Promotions />
+
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
@@ -89,7 +91,7 @@ export default function Home() {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Por que escolher a MF Car Auto Center?
+                Por que escolher a Interlagos Auto Center?
               </h2>
               <div className="space-y-4">
                 <p className="text-gray-600">
