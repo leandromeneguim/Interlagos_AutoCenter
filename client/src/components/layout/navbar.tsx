@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo1.jpg" alt="Interlagos Auto Center" className="h-12" />
+            <img src="/images/logo1.jpg" alt="Interlagos Auto Center" className="h-12" />
           </Link>
 
           {/* Desktop Menu */}
