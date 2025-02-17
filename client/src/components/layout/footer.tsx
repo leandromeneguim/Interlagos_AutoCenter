@@ -73,6 +73,7 @@ export default function Footer() {
               className="hidden absolute bottom-20 right-4 bg-white text-black p-4 rounded-lg shadow-lg"
             >
               <h4 className="font-bold mb-2">Desenvolvido por: Leandro Meneguim</h4>
+              <p className="text-sm mb-2">Entre em contato:</p>
               <div className="flex gap-4">
                 <a
                   href="https://wa.me/5514996021158"
