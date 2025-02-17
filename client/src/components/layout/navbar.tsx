@@ -23,7 +23,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center">
-              <img src="/logo1.jpg" alt="Interlagos Auto Center" className="h-12" />
+              <img src="/images/logo1.jpg" alt="Interlagos Auto Center" className="h-12" />
             </a>
           </Link>
 
@@ -47,10 +47,10 @@ export default function Navbar() {
             <div className="flex items-center space-x-4">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-red-600 mr-2" />
-                <span className="text-white">34 3231-0679</span>
+                <span className="text-white">(14) 3402-6611</span>
               </div>
               <a
-                href="https://wa.me/553432310679"
+                href="https://wa.me/5514996466611"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -93,10 +93,10 @@ export default function Navbar() {
             <div className="px-4 py-2">
               <div className="flex items-center mb-4">
                 <Phone className="h-5 w-5 text-red-600 mr-2" />
-                <span className="text-white">34 3231-0679</span>
+                <span className="text-white">(14) 3402-6611</span>
               </div>
               <a
-                href="https://wa.me/553432310679"
+                href="https://wa.me/5514996466611"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
