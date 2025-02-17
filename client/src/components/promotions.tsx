@@ -46,7 +46,7 @@ export default function Promotions() {
     <section className="py-12 px-4">
       <div className="container mx-auto">
         <div className="flex justify-center mb-8">
-          <h2 className="text-2xl font-bold text-red-600 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">PROMOÇÕES</h2>
+          <h2 className="text-2xl font-bold text-black drop-shadow-[0_2px_2px_rgba(255,0,0,0.8)]">PROMOÇÕES</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
