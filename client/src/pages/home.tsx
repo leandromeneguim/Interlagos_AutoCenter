@@ -150,7 +150,7 @@ export default function Home() {
       {/* Additional Services */}
       <section className="py-12 px-4 bg-gray-50">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Um Pouco +</h2>
+          <h2 className="text-3xl font-bold mb-8 text-black drop-shadow-[0_2px_2px_rgba(220,38,38,0.8)] text-center">UM POUCO +</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {ADDITIONAL_SERVICES.map((service, index) => (
               <div key={index} className="text-center">

@@ -1,0 +1,1 @@
+<h2 className="text-3xl font-bold mb-4 text-black drop-shadow-[0_2px_2px_rgba(220,38,38,0.8)] text-center">SERVIÇOS</h2>
