@@ -23,7 +23,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center">
-              <img src="/images/logo1.jpg" alt="Interlagos Auto Center" className="h-12" />
+              <img src="/logo1.jpg" alt="Interlagos Auto Center" className="h-12" />
             </a>
           </Link>
 
