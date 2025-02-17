@@ -23,32 +23,32 @@ const FEATURES = [
 
 const SERVICES = [
   {
-    icon: "/images/icons/oil-change.png",
+    icon: "/images/icons/troca-oleo.png",
     title: "TROCA DE ÓLEO",
     description: "O óleo do carro precisa ser trocado e lubrificar o motor, e tem seu desempenho prejudicado quando não é trocado no prazo correto."
   },
   {
-    icon: "/images/icons/alignment.png",
+    icon: "/images/icons/alinhamento.png",
     title: "ALINHAMENTO",
     description: "O alinhamento é importante para aumentar a vida útil dos pneus e melhorar a economia de combustível."
   },
   {
-    icon: "/images/icons/balancing.png",
+    icon: "/images/icons/balanceamento.png",
     title: "BALANCEAMENTO",
     description: "O balanceamento equilibra o conjunto do pneu e contribui para o conforto do motorista e evita o desgaste ou má distribuição de massas no conjunto pneu e roda fazendo segurança para seu carro."
   },
   {
-    icon: "/images/icons/battery.png",
+    icon: "/images/icons/bateria.png",
     title: "TROCA DE BATERIAS",
     description: "Muitas pessoas não sabem a hora ideal da troca da bateria, por isso, acabam passando por problemas, que nem sempre são causados pela bateria, mas que prejudicam o processo de instalação em si."
   },
   {
-    icon: "/images/icons/maintenance.png",
+    icon: "/images/icons/manutencao.png",
     title: "MANUTENÇÃO COMPLETA",
     description: "Fazemos a manutenção completa e preventiva garantindo segurança para você e sua família e bom funcionamento do seu veículo."
   },
   {
-    icon: "/images/icons/electric.png",
+    icon: "/images/icons/eletrica.png",
     title: "REVISÃO ELÉTRICA",
     description: "A parte elétrica do veículo é muito delicada, aqui fazemos a revisão completa, garantindo que seu veículo não tenha uma pane no trabalho."
   }
@@ -57,51 +57,51 @@ const SERVICES = [
 const ADDITIONAL_SERVICES = [
   {
     title: "ALINHAMENTO E BALANCEAMENTO",
-    image: "/images/services/alignment.jpg"
+    image: "/images/services/alinhamento-balanceamento.png"
   },
   {
     title: "TROCA DE EMBREAGEM",
-    image: "/images/services/clutch.jpg"
+    image: "/images/services/embreagem.png"
   },
   {
     title: "TROCA DE ÓLEO E FILTROS",
-    image: "/images/services/oil.jpg"
+    image: "/images/services/oleo-filtros.png"
   },
   {
     title: "SISTEMA DE FREIOS",
-    image: "/images/services/brakes.jpg"
+    image: "/images/services/freios.png"
   },
   {
     title: "HIGIENIZAÇÃO DO AR CONDICIONADO",
-    image: "/images/services/ac.jpg"
+    image: "/images/services/ar-condicionado.png"
   },
   {
     title: "LIMPEZA DE TBI",
-    image: "/images/services/tbi.jpg"
+    image: "/images/services/tbi.png"
   },
   {
     title: "REVISÃO COMPLETA DE SUSPENSÃO",
-    image: "/images/services/suspension.jpg"
+    image: "/images/services/suspensao.png"
   },
   {
     title: "INJEÇÃO ELETRÔNICA",
-    image: "/images/services/injection.jpg"
+    image: "/images/services/injecao.png"
   },
   {
     title: "TROCA DE CORREIA DENTADA",
-    image: "/images/services/belt.jpg"
+    image: "/images/services/correia.png"
   },
   {
     title: "REVISÃO COMPLETA DA DIREÇÃO",
-    image: "/images/services/steering.jpg"
+    image: "/images/services/direcao.png"
   },
   {
     title: "TROCA DE FLUIDO DO CÂMBIO",
-    image: "/images/services/transmission.jpg"
+    image: "/images/services/cambio.png"
   },
   {
     title: "RETÍFICA DO MOTOR",
-    image: "/images/services/engine.jpg"
+    image: "/images/services/motor.png"
   }
 ];
 

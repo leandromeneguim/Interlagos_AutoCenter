@@ -66,7 +66,11 @@ export default function Footer() {
               }}
               className="text-gray-400 hover:text-white transition-colors"
             >
-              <img src="/images/developer-icon.png" alt="Desenvolvedor" className="w-8 h-8" />
+              <img 
+                src="/images/avatar-developer.png" 
+                alt="Desenvolvedor" 
+                className="w-8 h-8 rounded-full"
+              />
             </button>
             <div 
               id="developer-info" 
