@@ -1,6 +1,5 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import HeroSlider from "@/components/hero-slider";
 import Promotions from "@/components/promotions";
 
@@ -24,34 +23,52 @@ const FEATURES = [
 
 const SERVICES = [
   {
-    icon: "/icons/oil-change.png",
-    title: "TROCA DE ÓLEO",
-    description: "O óleo do carro precisa ser trocado e lubrificar o motor, e tem seu desempenho prejudicado quando não é trocado no prazo correto."
+    title: "ALINHAMENTO E BALANCEAMENTO",
+    image: "/images/services/alignment.jpg"
   },
   {
-    icon: "/icons/alignment.png",
-    title: "ALINHAMENTO",
-    description: "O alinhamento é importante para aumentar a vida útil dos pneus e melhorar a economia de combustível."
+    title: "TROCA DE EMBREAGEM",
+    image: "/images/services/clutch.jpg"
   },
   {
-    icon: "/icons/balancing.png",
-    title: "BALANCEAMENTO",
-    description: "O balanceamento equilibra o conjunto do pneu e contribui para o conforto do motorista e evita o desgaste ou má distribuição de massas no conjunto pneu e roda fazendo segurança para seu carro."
+    title: "TROCA DE ÓLEO E FILTROS",
+    image: "/images/services/oil.jpg"
   },
   {
-    icon: "/icons/battery.png",
-    title: "TROCA DE BATERIAS",
-    description: "Muitas pessoas não sabem a hora ideal da troca da bateria, por isso, acabam passando por problemas, que nem sempre são causados pela bateria, mas que prejudicam o processo de instalação em si."
+    title: "SISTEMA DE FREIOS",
+    image: "/images/services/brakes.jpg"
   },
   {
-    icon: "/icons/maintenance.png",
-    title: "MANUTENÇÃO COMPLETA",
-    description: "Fazemos a manutenção completa e preventiva garantindo segurança para você e sua família e bom funcionamento do seu veículo."
+    title: "HIGIENIZAÇÃO DO AR CONDICIONADO",
+    image: "/images/services/ac.jpg"
   },
   {
-    icon: "/icons/electric.png",
-    title: "REVISÃO ELÉTRICA",
-    description: "A parte elétrica do veículo é muito delicada, aqui fazemos a revisão completa, garantindo que seu veículo não tenha uma pane no trabalho."
+    title: "LIMPEZA DE TBI",
+    image: "/images/services/tbi.jpg"
+  },
+  {
+    title: "REVISÃO COMPLETA DE SUSPENSÃO",
+    image: "/images/services/suspension.jpg"
+  },
+  {
+    title: "INJEÇÃO ELETRÔNICA",
+    image: "/images/services/injection.jpg"
+  },
+  {
+    title: "TROCA DE CORREIA DENTADA",
+    image: "/images/services/belt.jpg"
+  },
+  {
+    title: "REVISÃO COMPLETA DA DIREÇÃO",
+    image: "/images/services/steering.jpg"
+  },
+  {
+    title: "TROCA DE FLUIDO DO CÂMBIO",
+    image: "/images/services/transmission.jpg"
+  },
+  {
+    title: "RETÍFICA DO MOTOR",
+    image: "/images/services/engine.jpg"
   }
 ];
 
@@ -66,61 +83,34 @@ export default function Home() {
         {FEATURES.map((feature, index) => (
           <div
             key={index}
-            className={`p-8 text-center ${
+            className={`p-4 text-center ${
               index === 1 ? "bg-red-600 text-white" : index === 0 ? "bg-gray-100" : "bg-black text-white"
             }`}
           >
-            <div className="text-4xl mb-4">{feature.icon}</div>
-            <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-            <p>{feature.description}</p>
+            <div className="text-3xl mb-2">{feature.icon}</div>
+            <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+            <p className="text-sm">{feature.description}</p>
           </div>
         ))}
       </section>
 
       {/* Services */}
-      <section className="py-16 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-4 text-red-600">Serviços</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                {SERVICES.map((service, index) => (
-                  <div key={index} className="text-center">
-                    <img
-                      src={service.icon}
-                      alt={service.title}
-                      className="w-20 h-20 mx-auto mb-4"
-                    />
-                    <h3 className="text-sm font-bold mb-2">{service.title}</h3>
-                    <p className="text-xs text-gray-600">{service.description}</p>
-                  </div>
-                ))}
+          <h2 className="text-3xl font-bold mb-8 text-center">Um Pouco +</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {SERVICES.map((service, index) => (
+              <div key={index} className="text-center">
+                <div className="rounded-full overflow-hidden border-2 border-red-600 mb-2">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full aspect-square object-cover"
+                  />
+                </div>
+                <h3 className="text-xs font-bold">{service.title}</h3>
               </div>
-            </div>
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1651169610763-fddf392fadb4"
-                alt="Oficina"
-                className="w-full rounded-lg"
-              />
-              <div className="mt-8 text-center">
-                <h3 className="text-xl font-bold mb-4">Mais que serviços, uma nova experiência!</h3>
-                <p className="text-gray-600 mb-6">
-                  A MF Car Autocenter está sempre em busca de modernização
-                  em ferramentas de alta qualidade e tecnologia para obter ganhos de
-                  agilidade e qualidade nos processos e sua experiência aos clientes.
-                </p>
-                <a
-                  href="https://wa.me/553432310679"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button className="bg-green-500 hover:bg-green-600">
-                    Orçamento WhatsApp
-                  </Button>
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

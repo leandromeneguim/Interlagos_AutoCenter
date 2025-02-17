@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Phone size={20} className="text-primary" />
-                <span>(34) 3231-0679</span>
+                <span>(14) 3402-6611</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={20} className="text-primary" />
@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin size={20} className="text-primary" />
-                <span>Rua Example, 123 - São Paulo/SP</span>
+                <span>Rua Coronel Galdino, 566 - Marília/SP</span>
               </div>
             </div>
           </div>
@@ -33,10 +33,20 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Redes Sociais</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-primary transition-colors">
+              <a 
+                href="https://www.facebook.com/InterlagosCentroAutomotivo" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
                 <Facebook size={24} />
               </a>
-              <a href="#" className="hover:text-primary transition-colors">
+              <a 
+                href="https://www.instagram.com/interlagos.marilia/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
                 <Instagram size={24} />
               </a>
             </div>
