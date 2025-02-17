@@ -1,4 +1,5 @@
 import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
+import { SiWhatsapp, SiLinkedin } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -53,8 +54,45 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+        <div className="mt-8 pt-8 border-t border-gray-800 flex justify-between items-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Interlagos Auto Center. Todos os direitos reservados.</p>
+          <div className="flex items-center gap-4">
+            <button 
+              onClick={() => {
+                const developerInfo = document.getElementById('developer-info');
+                if (developerInfo) {
+                  developerInfo.style.display = developerInfo.style.display === 'none' ? 'block' : 'none';
+                }
+              }}
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <img src="/images/developer-icon.png" alt="Desenvolvedor" className="w-8 h-8" />
+            </button>
+            <div 
+              id="developer-info" 
+              className="hidden absolute bottom-20 right-4 bg-white text-black p-4 rounded-lg shadow-lg"
+            >
+              <h4 className="font-bold mb-2">Desenvolvido por: Leandro Meneguim</h4>
+              <div className="flex gap-4">
+                <a
+                  href="https://wa.me/5514996021158"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#25D366] hover:opacity-80"
+                >
+                  <SiWhatsapp size={24} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/leandromeneguim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0077B5] hover:opacity-80"
+                >
+                  <SiLinkedin size={24} />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

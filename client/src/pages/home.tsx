@@ -23,6 +23,39 @@ const FEATURES = [
 
 const SERVICES = [
   {
+    icon: "/images/icons/oil-change.png",
+    title: "TROCA DE ÓLEO",
+    description: "O óleo do carro precisa ser trocado e lubrificar o motor, e tem seu desempenho prejudicado quando não é trocado no prazo correto."
+  },
+  {
+    icon: "/images/icons/alignment.png",
+    title: "ALINHAMENTO",
+    description: "O alinhamento é importante para aumentar a vida útil dos pneus e melhorar a economia de combustível."
+  },
+  {
+    icon: "/images/icons/balancing.png",
+    title: "BALANCEAMENTO",
+    description: "O balanceamento equilibra o conjunto do pneu e contribui para o conforto do motorista e evita o desgaste ou má distribuição de massas no conjunto pneu e roda fazendo segurança para seu carro."
+  },
+  {
+    icon: "/images/icons/battery.png",
+    title: "TROCA DE BATERIAS",
+    description: "Muitas pessoas não sabem a hora ideal da troca da bateria, por isso, acabam passando por problemas, que nem sempre são causados pela bateria, mas que prejudicam o processo de instalação em si."
+  },
+  {
+    icon: "/images/icons/maintenance.png",
+    title: "MANUTENÇÃO COMPLETA",
+    description: "Fazemos a manutenção completa e preventiva garantindo segurança para você e sua família e bom funcionamento do seu veículo."
+  },
+  {
+    icon: "/images/icons/electric.png",
+    title: "REVISÃO ELÉTRICA",
+    description: "A parte elétrica do veículo é muito delicada, aqui fazemos a revisão completa, garantindo que seu veículo não tenha uma pane no trabalho."
+  }
+];
+
+const ADDITIONAL_SERVICES = [
+  {
     title: "ALINHAMENTO E BALANCEAMENTO",
     image: "/images/services/alignment.jpg"
   },
@@ -94,18 +127,38 @@ export default function Home() {
         ))}
       </section>
 
-      {/* Services */}
+      {/* Main Services */}
       <section className="py-12 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-red-600">Serviços</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+            {SERVICES.map((service, index) => (
+              <div key={index} className="text-center">
+                <img
+                  src={service.icon}
+                  alt={service.title}
+                  className="w-20 h-20 mx-auto mb-4"
+                />
+                <h3 className="text-sm font-bold mb-2">{service.title}</h3>
+                <p className="text-xs text-gray-600">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Services */}
+      <section className="py-12 px-4 bg-gray-50">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Um Pouco +</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {SERVICES.map((service, index) => (
+            {ADDITIONAL_SERVICES.map((service, index) => (
               <div key={index} className="text-center">
-                <div className="rounded-full overflow-hidden border-2 border-red-600 mb-2">
+                <div className="rounded-full overflow-hidden border-2 border-red-600 mb-2 w-24 h-24 mx-auto">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full aspect-square object-cover"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 <h3 className="text-xs font-bold">{service.title}</h3>
