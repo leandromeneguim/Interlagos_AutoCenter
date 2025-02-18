@@ -62,7 +62,10 @@ export default function Promotions() {
                 <StarRating rating={promo.stars} />
                 <h3 className="font-bold mt-2">{promo.title}</h3>
                 <div className="mt-2">
-                  <span className="text-3xl font-bold text-red-600">R$ {promo.price}</span>
+                  <span className="text-3xl font-bold text-red-600">
+                    <span className="text-2xl">6 X </span>
+                    R$ {promo.price}
+                  </span>
                   <div className="text-sm text-gray-500">
                     OU À VISTA R$ {promo.originalPrice} CADA
                   </div>
