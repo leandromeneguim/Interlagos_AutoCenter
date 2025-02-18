@@ -57,51 +57,51 @@ const SERVICES = [
 const ADDITIONAL_SERVICES = [
   {
     title: "ALINHAMENTO E BALANCEAMENTO",
-    image: "/images/services/alinhamento-balanceamento.png"
+    image: "/images/balanceamento_alinhamento.jpeg"
   },
   {
     title: "TROCA DE EMBREAGEM",
-    image: "/images/services/embreagem.png"
+    image: "/images/embreagem.jpeg"
   },
   {
     title: "TROCA DE ÓLEO E FILTROS",
-    image: "/images/services/oleo-filtros.png"
+    image: "/images/troca_de_oleo.jpeg"
   },
   {
     title: "SISTEMA DE FREIOS",
-    image: "/images/services/freios.png"
+    image: "/images/freios.jpeg"
   },
   {
     title: "HIGIENIZAÇÃO DO AR CONDICIONADO",
-    image: "/images/services/ar-condicionado.png"
+    image: "/images/higienizacao_ar_condicionado.jpeg"
   },
   {
     title: "LIMPEZA DE TBI",
-    image: "/images/services/tbi.png"
+    image: "/images/limpeza_de_tbi.jpeg"
   },
   {
     title: "REVISÃO COMPLETA DE SUSPENSÃO",
-    image: "/images/services/suspensao.png"
+    image: "/images/suspensao_automotiva.jpeg"
   },
   {
     title: "INJEÇÃO ELETRÔNICA",
-    image: "/images/services/injecao.png"
+    image: "/images/injecao_eletronica.jpeg"
   },
   {
     title: "TROCA DE CORREIA DENTADA",
-    image: "/images/services/correia.png"
+    image: "/images/correia_dentada.jpeg"
   },
   {
     title: "REVISÃO COMPLETA DA DIREÇÃO",
-    image: "/images/services/direcao.png"
+    image: "/images/direcao.jpeg"
   },
   {
     title: "TROCA DE FLUIDO DO CÂMBIO",
-    image: "/images/services/cambio.png"
+    image: "/images/fluido_cambio_automatico.jpeg"
   },
   {
     title: "RETÍFICA DO MOTOR",
-    image: "/images/services/motor.png"
+    image: "/images/retifica_de_motor.jpeg"
   }
 ];
 
