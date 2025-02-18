@@ -116,12 +116,11 @@ export default function Home() {
         {FEATURES.map((feature, index) => (
           <div
             key={index}
-            className={`p-4 text-center ${
+            className={`py-2 px-4 text-center ${
               index === 1 ? "bg-red-600 text-white" : index === 0 ? "bg-gray-100" : "bg-black text-white"
             }`}
           >
-            <div className="text-3xl mb-2">{feature.icon}</div>
-            <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+            <h3 className="text-lg font-bold mb-1">{feature.title}</h3>
             <p className="text-sm">{feature.description}</p>
           </div>
         ))}
