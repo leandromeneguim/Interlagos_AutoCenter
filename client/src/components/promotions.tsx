@@ -2,17 +2,31 @@ import { Button } from "@/components/ui/button";
 
 const PROMOTIONS = [
   {
+    title: "AMORTECEDOR",
+    price: "8.31",
+    originalPrice: "164.90",
+    image: "/images/amortecedores.jpeg",
+    stars: 5
+  },
+  {
+    title: "PASTILHA DE FREIO",
+    price: "6.66",
+    originalPrice: "39.99",
+    image: "/images/pastilha_freio.jpeg",
+    stars: 5
+  },
+  {
     title: "CORREIA DENTADA",
-    price: "25.90",
-    originalPrice: "59.90",
-    image: "/images/correia_dentada2.jpeg",
+    price: "21.65",
+    originalPrice: "52.90",
+    image: "/images/correia_dentada.jpeg",
     stars: 5
   },
   {
     title: "EMBREAGEM",
-    price: "49.90",
-    originalPrice: "279.90",
-    image: "/images/embreagem2.jpeg",
+    price: "44.98",
+    originalPrice: "269.90",
+    image: "/images/embreagem.jpeg",
     stars: 5
   }
 ];
