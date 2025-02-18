@@ -19,14 +19,14 @@ const PROMOTIONS = [
     title: "CORREIA DENTADA",
     price: "21.65",
     originalPrice: "52.90",
-    image: "/images/correia_dentada.jpeg",
+    image: "/images/correia_dentada2.jpeg",
     stars: 5
   },
   {
     title: "EMBREAGEM",
     price: "44.98",
     originalPrice: "269.90",
-    image: "/images/embreagem.jpeg",
+    image: "/images/embreagem2.jpeg",
     stars: 5
   }
 ];
