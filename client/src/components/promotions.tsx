@@ -5,28 +5,42 @@ const PROMOTIONS = [
     title: "AMORTECEDOR",
     price: "8.31",
     originalPrice: "164.90",
-    image: "https://example.com/amortecedor.jpg",
+    image: "/images/amortecedores.jpeg",
     stars: 5
   },
   {
     title: "PASTILHA DE FREIO",
     price: "6.66",
     originalPrice: "39.99",
-    image: "https://example.com/pastilha.jpg",
+    image: "/images/pastilha_freio.jpeg",
     stars: 5
   },
   {
     title: "CORREIA DENTADA",
     price: "21.65",
     originalPrice: "52.90",
-    image: "https://example.com/correia.jpg",
+    image: "/images/correia_dentada.jpeg",
     stars: 5
   },
   {
     title: "EMBREAGEM",
     price: "44.98",
     originalPrice: "269.90",
-    image: "https://example.com/embreagem.jpg",
+    image: "/images/embreagem.jpeg",
+    stars: 5
+  },
+  {
+    title: "CORREIA DENTADA 2",
+    price: "25.90",
+    originalPrice: "59.90",
+    image: "/images/correia_dentada_2.jpeg",
+    stars: 5
+  },
+  {
+    title: "EMBREAGEM 2",
+    price: "49.90",
+    originalPrice: "279.90",
+    image: "/images/embreagem2.jpeg",
     stars: 5
   }
 ];
