@@ -34,8 +34,8 @@ export default function Navbar() {
                   key={item.href} 
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
-                    location === item.href ? "text-primary" : "text-white"
+                    "text-sm font-medium transition-colors text-white hover:text-red-600",
+                    location === item.href ? "text-white" : "text-white"
                   )}
                 >
                   {item.label}
