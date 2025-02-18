@@ -23,34 +23,34 @@ const FEATURES = [
 
 const SERVICES = [
   {
-    icon: "/images/icons/troca-oleo.png",
+    icon: "🚗",
     title: "TROCA DE ÓLEO",
-    description: "O óleo do carro precisa ser trocado e lubrificar o motor, e tem seu desempenho prejudicado quando não é trocado no prazo correto."
+    description: "O óleo do carro é essencial para lubrificar, limpar e refrigerar o motor, e tem seu desempenho prejudicado quando não é trocado no prazo correto."
   },
   {
-    icon: "/images/icons/alinhamento.png",
+    icon: "🔧",
     title: "ALINHAMENTO",
-    description: "O alinhamento é importante para aumentar a vida útil dos pneus e melhorar a economia de combustível."
+    description: "O alinhamento reduz o desgaste dos pneus e contribui para aumentar a vida útil dos pneus e melhora a economia de combustível."
   },
   {
-    icon: "/images/icons/balanceamento.png",
+    icon: "🚙",
     title: "BALANCEAMENTO",
-    description: "O balanceamento equilibra o conjunto do pneu e contribui para o conforto do motorista e evita o desgaste ou má distribuição de massas no conjunto pneu e roda fazendo segurança para seu carro."
+    description: "O Balanceamento de rodas consiste em equilibrar o conjunto pneu e roda trazendo segurança para seu carro."
   },
   {
-    icon: "/images/icons/bateria.png",
+    icon: "🔋",
     title: "TROCA DE BATERIAS",
-    description: "Muitas pessoas não sabem a hora ideal da troca da bateria, por isso, acabam passando por problemas, que nem sempre são causados pela bateria, mas que prejudicam o processo de instalação em si."
+    description: "Muitas pessoas não sabem a hora ideal da troca da bateria, por isso, acabam passando por problemas, aqui realizamos o processo de instalação pra você."
   },
   {
-    icon: "/images/icons/manutencao.png",
+    icon: "⚡",
     title: "MANUTENÇÃO COMPLETA",
-    description: "Fazemos a manutenção completa e preventiva garantindo segurança para você e sua família e bom funcionamento do seu veículo."
+    description: "Fazemos a manutenção corretiva e preventiva garantindo segurança para você e sua família e bom funcionamento do seu veículo."
   },
   {
-    icon: "/images/icons/eletrica.png",
+    icon: "🔌",
     title: "REVISÃO ELÉTRICA",
-    description: "A parte elétrica do veículo é muito delicada, aqui fazemos a revisão completa, garantindo que seu veículo não tenha uma pane no trabalho."
+    description: "A parte elétrica do veículo é muito delicada, aqui fazemos a revisão completa, garantindo que seu veículo não tenha uma pane no trânsito."
   }
 ];
 
@@ -134,11 +134,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {SERVICES.map((service, index) => (
               <div key={index} className="text-center">
-                <img
-                  src={service.icon}
-                  alt={service.title}
-                  className="w-20 h-20 mx-auto mb-4"
-                />
+                <div className="text-4xl mb-4 text-center">{service.icon}</div>
                 <h3 className="text-sm font-bold mb-2">{service.title}</h3>
                 <p className="text-xs text-gray-600">{service.description}</p>
               </div>
